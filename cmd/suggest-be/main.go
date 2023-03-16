@@ -2,7 +2,8 @@ package main
 
 import (
 	"os"
-	"suggest-be/src/web"
+
+	"github.com/nakayana900/suggest-be/src/web"
 
 	"github.com/joho/godotenv"
 )
