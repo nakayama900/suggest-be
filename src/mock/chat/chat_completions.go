@@ -6,9 +6,9 @@ package mock_chat
 
 import (
 	reflect "reflect"
-	chat "suggest-be/src/chat"
 
 	gomock "github.com/golang/mock/gomock"
+	chat "github.com/nakayama900/suggest-be/src/chat"
 )
 
 // MockCompletion is a mock of Completion interface.
