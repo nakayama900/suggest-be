@@ -6,7 +6,10 @@ require (
 	github.com/gin-gonic/gin v1.9.0
 	github.com/golang/mock v1.6.0
 	github.com/joho/godotenv v1.5.1
+	github.com/nakayama900/suggest-be/src/web v0.0.0-00010101000000-000000000000
 )
+
+replace github.com/nakayama900/suggest-be/src/web => ./src/web
 
 require (
 	github.com/bytedance/sonic v1.8.0 // indirect
