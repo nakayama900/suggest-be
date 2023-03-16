@@ -1,4 +1,4 @@
-module chatgpt-230308
+module suggest-be
 
 go 1.19
 

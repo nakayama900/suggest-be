@@ -1,8 +1,8 @@
 package suggest
 
 import (
-	"chatgpt-230308/src/chat"
 	"strings"
+	"suggest-be/src/chat"
 )
 
 func MessageExtract(message *chat.ResponseMessage) string {
@@ -11,6 +11,7 @@ func MessageExtract(message *chat.ResponseMessage) string {
 	}
 	return message.Content
 }
+
 func ExtractSliceFromStr(s string) string {
 	index := strings.Index(
 		s, "[")

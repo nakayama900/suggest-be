@@ -5,8 +5,8 @@
 package mock_chat
 
 import (
-	chat "chatgpt-230308/src/chat"
 	reflect "reflect"
+	chat "suggest-be/src/chat"
 
 	gomock "github.com/golang/mock/gomock"
 )

@@ -1,21 +1,20 @@
 package suggest
 
 import (
-	"chatgpt-230308/src/chat"
 	"log"
 	"strings"
+	"suggest-be/src/chat"
 	"testing"
 )
 
 func TestGenOneWord(t *testing.T) {
 	a := GenOneWord("apple", PromptV1)
 	a.debug()
-
 }
-func TestOneWord_Request(t *testing.T) {
 
-	//a := GenOneWord("apple", PromptV1)
-	//response, err := a.Request()
+func TestOneWord_Request(t *testing.T) {
+	// a := GenOneWord("apple", PromptV1)
+	// response, err := a.Request()
 
 	//if err != nil {
 	//	log.Panic(err)
@@ -53,7 +52,7 @@ func TestOneWord_Request(t *testing.T) {
 		if index > -1 && lastIndex > index {
 			responses = append(responses, v.Message.Content[index:lastIndex])
 		}
-		//responses=append(responses, v.Message.Content)
+		// responses=append(responses, v.Message.Content)
 	}
 	println(len(responses))
 	println(responses[0])

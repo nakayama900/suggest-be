@@ -1,9 +1,9 @@
 package suggest
 
 import (
-	"chatgpt-230308/src/chat"
 	"log"
 	"os"
+	"suggest-be/src/chat"
 	"time"
 )
 
@@ -24,8 +24,8 @@ var preset = chat.NewChatCompletions("gpt-3.5-turbo", os.Getenv("GPT_KEY"),
 	1500, 10*time.Minute)
 
 func (w oneWord) Request() (string, error) {
-	//errChan := make(chan error, 1)
-	//wg.Add(1)
+	// errChan := make(chan error, 1)
+	// wg.Add(1)
 	cmp := preset
 
 	res, err := cmp.AskOneQuestion(GenQuery(w.templ, w.src))
@@ -52,7 +52,7 @@ func (w oneWord) Request() (string, error) {
 		}
 		log.Println("Message: ", w.ResponseText)
 		suggest = suggest + ExtractSliceFromStr(w.ResponseText)
-		//responses=append(responses, v.Message.Content)
+		// responses=append(responses, v.Message.Content)
 	}
 	return suggest, nil
 	//responses := make(chan string, 1)
@@ -97,6 +97,7 @@ func (w oneWord) Request() (string, error) {
 		//return responses, errChan
 		return*/
 }
+
 func GenOneWord(s any, templ string) Strategy {
 	if s == "" {
 		return nil
@@ -109,10 +110,12 @@ func GenOneWord(s any, templ string) Strategy {
 		templ: templ,
 	}
 }
+
 func (w oneWord) debug() {
 	println(w.src)
 	println(w.templ)
 }
+
 func (w oneWord) GetRaw() string {
 	return w.ResponseText
 }

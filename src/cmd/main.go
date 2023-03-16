@@ -1,13 +1,13 @@
 package main
 
 import (
-	"chatgpt-230308/src/web"
-	"github.com/joho/godotenv"
 	"os"
+	"suggest-be/src/web"
+
+	"github.com/joho/godotenv"
 )
 
 func main() {
-
 	godotenv.Load(".env.local")
 	godotenv.Load()
 	if os.Getenv("GPT_KEY") == "" {
@@ -17,5 +17,4 @@ func main() {
 	if err := router.Run(":8080"); err != nil {
 		panic(err)
 	}
-
 }
