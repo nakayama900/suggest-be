@@ -1,4 +1,4 @@
-module github.com/akayama900/suggest-be
+module github.com/nakayama900/suggest-be
 
 go 1.19
 
