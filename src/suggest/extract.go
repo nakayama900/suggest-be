@@ -2,7 +2,8 @@ package suggest
 
 import (
 	"strings"
-	"suggest-be/src/chat"
+
+	"github.com/nakayama900/suggest-be/src/chat"
 )
 
 func MessageExtract(message *chat.ResponseMessage) string {
