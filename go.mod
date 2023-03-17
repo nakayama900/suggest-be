@@ -6,6 +6,7 @@ require (
 	github.com/gin-gonic/gin v1.9.0
 	github.com/golang/mock v1.6.0
 	github.com/joho/godotenv v1.5.1
+	github.com/nakayama900/suggest-be/src/web v0.0.0-20230316065358-0b1b2cac640e
 )
 
 require (
