@@ -3,8 +3,9 @@ package suggest
 import (
 	"log"
 	"os"
-	"suggest-be/src/chat"
 	"time"
+
+	"github.com/nakayama900/suggest-be/src/chat"
 )
 
 type Request string

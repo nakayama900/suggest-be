@@ -3,8 +3,9 @@ package suggest
 import (
 	"log"
 	"strings"
-	"suggest-be/src/chat"
 	"testing"
+
+	"github.com/nakayama900/suggest-be/src/chat"
 )
 
 func TestGenOneWord(t *testing.T) {

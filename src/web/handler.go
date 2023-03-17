@@ -3,7 +3,8 @@ package web
 import (
 	"log"
 	"net/http"
-	"suggest-be/src/suggest"
+
+	"github.com/nakayama900/suggest-be/src/suggest"
 
 	"github.com/gin-gonic/gin"
 )
